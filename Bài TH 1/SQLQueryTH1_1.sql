@@ -124,3 +124,6 @@ drop CT_DH_FK_MaDonHangGiaoHang, CT_DH_FK_MaLoaiMatHang
 alter table CHITIET_DONHANG
 add constraint CT_DH_FK_MaDonHangGiaoHang foreign key(MaDonHangGiaoHang) references DONHANG_GIAOHANG on delete cascade on update cascade,
 	constraint CT_DH_FK_MaLoaiMatHang foreign key(MaLoaiMatHang) references LOAIMATHANG on delete cascade on update cascade
+
+delete from KHACHHANG
+where TenKhachHang = 'Le Thi A'
